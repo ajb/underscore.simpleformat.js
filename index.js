@@ -3,7 +3,7 @@ _.mixin({
     if (escape !== false) {
       string = _.escape(string);
     }
-    
-    return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + '<br />' + '$2');
+
+    return (string + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + '<br />' + '$2');
   }
 });
